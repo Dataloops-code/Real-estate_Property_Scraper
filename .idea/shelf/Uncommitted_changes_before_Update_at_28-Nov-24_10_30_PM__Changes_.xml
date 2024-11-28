@@ -1,0 +1,164 @@
+<changelist name="Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]" date="1732825845951" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28-Nov-24 10:30 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../property_sale/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/ic_launcher.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../property_sale/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/ic_launcher1.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatrain" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/testlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatest" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/testimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatestlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/trainingimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/trainingimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../property_sale/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/ic_launcher2.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/.idea/.name" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../property_sale/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/ic_launcher3.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/validationimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/testlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/validationimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatrainlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/testimages" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatest" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatavalidation" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/validationlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../property_sale/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Nov-24_10_30_PM_[Changes]/ic_launcher4.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatestlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatrainlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatavalidationlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/traininglabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/traininglabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatavalidationlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/All Detected as Faces/v2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatavalidation" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/All Detected as Faces/v2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Fall 22/Machine Learning/ML project hatem/FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/facedata/facedatatrain" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../FaceAndDigitClassification/Face_and_Digit_Detection_ML_Project/digitdata/validationlabels" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
