@@ -26,9 +26,11 @@ jobs:
     - name: Install dependencies
       run: |
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    # Explicitly install fpdf as a troubleshooting step
-    - name: Install fpdf explicitly
-      run: pip install fpdf
+
+      # Install Playwright browsers
+    - name: Install Playwright browsers
+      run: |
+        python -m playwright install
 
     # Run the main Python script
     - name: Run Main
