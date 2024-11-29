@@ -1,7 +1,7 @@
 name: Daily Run
 
 on:
-  schedule: 
+  schedule:
     # Runs daily at 1:30 AM Egypt time (11:30 PM UTC)
     - cron: '50 23 * * *'
 
@@ -16,51 +16,40 @@ jobs:
     # Check out the repository
     - uses: actions/checkout@v4
 
-    # Set up Python
-    - name: Set up Python 3.11
+    # Set up Python 3.10
+    - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
 
     # Install system dependencies for Playwright
-    # - name: Install system dependencies
-    #   run: |
-    #     sudo apt-get update
-    #     sudo apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2
 
-    # Install dependencies from requirements.txt
-    # - name: Install dependencies
-    #   run: |
-    #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    # Explicitly install fpdf as a troubleshooting step
-    - name: Install fpdf explicitly
-      run: pip install fpdf
-
-    # 2. Set up Google credentials
+    # Set up Google credentials
     - name: Set up Google credentials
       run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > ./credentials/real-estate-property-scraper-4d9f71a7ded4.json
-
 
     # Install Playwright browsers
     - name: Install Playwright browsers
       run: |
         npm install -g playwright
         python -m playwright install
-        python -m playwright install chromium
 
-    # 4. Install dependencies (e.g., pandas, playwright, etc.)
+    # Install dependencies from requirements.txt
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
 
     # Run the main Python script
     - name: Run Main
       run: |
         python main.py
 
-    # Upload the results to Google Drive (assuming the credentials and saving logic is set up)
+    # Save results to Google Drive
     - name: Save Results to Google Drive
       run: |
-       python save_to_drive.py
+        python save_to_drive.py
