@@ -80,38 +80,38 @@ if __name__ == "__main__":
 
     # Define the scraping categories
     categories_1 = [
-        # ("House for Sale", "https://www.q84sale.com/en/property/for-sale/house-for-sale/{}", 5),
+        ("House for Sale", "https://www.q84sale.com/en/property/for-sale/house-for-sale/{}", 5),
         ("Building or floors", "https://www.q84sale.com/en/property/for-sale/building-or-floors/{}", 1),
         ("Apartment for Sale", "https://www.q84sale.com/en/property/for-sale/apartment-for-sale/{}", 2),
-        # ("Demolishing", "https://www.q84sale.com/en/property/for-sale/demolishing/{}", 1),
-        # ("Lounge for Sale", "https://www.q84sale.com/en/property/for-sale/lounge-for-sale/{}", 1),
-        # ("Chalet for Sale", "https://www.q84sale.com/en/property/for-sale/chalet-for-sale/{}", 1),
-        # ("Farms for Sale", "https://www.q84sale.com/en/property/for-sale/farms-for-sale/{}", 1),
-        # ("Land", "https://www.q84sale.com/en/property/for-sale/land/{}", 1),
-        # ("Residential Certificate", "https://www.q84sale.com/en/property/for-sale/residential-certificate/{}", 1),
-        # ("Commercial Land Certificate", "https://www.q84sale.com/en/property/for-sale/commercial-land-certificate/{}", 1),
-        # ("Shop for Sale", "https://www.q84sale.com/en/property/for-sale/shop-for-sale/{}", 2),
-        # ("Company", "https://www.q84sale.com/en/property/for-sale/company/{}", 1),
-        # ("Wanted Property for Sale", "https://www.q84sale.com/en/property/for-sale/wanted-property-for-sale/{}", 1),
+        ("Demolishing", "https://www.q84sale.com/en/property/for-sale/demolishing/{}", 1),
+        ("Lounge for Sale", "https://www.q84sale.com/en/property/for-sale/lounge-for-sale/{}", 1),
+        ("Chalet for Sale", "https://www.q84sale.com/en/property/for-sale/chalet-for-sale/{}", 1),
+        ("Farms for Sale", "https://www.q84sale.com/en/property/for-sale/farms-for-sale/{}", 1),
+        ("Land", "https://www.q84sale.com/en/property/for-sale/land/{}", 1),
+        ("Residential Certificate", "https://www.q84sale.com/en/property/for-sale/residential-certificate/{}", 1),
+        ("Commercial Land Certificate", "https://www.q84sale.com/en/property/for-sale/commercial-land-certificate/{}", 1),
+        ("Shop for Sale", "https://www.q84sale.com/en/property/for-sale/shop-for-sale/{}", 2),
+        ("Company", "https://www.q84sale.com/en/property/for-sale/company/{}", 1),
+        ("Wanted Property for Sale", "https://www.q84sale.com/en/property/for-sale/wanted-property-for-sale/{}", 1),
     ]
 
-    # categories_2 = [
-    #     ("House for Rent", "https://www.q84sale.com/en/property/for-rent/house-for-rent/{}", 2),
-    #     ("Floor", "https://www.q84sale.com/en/property/for-rent/floor/{}", 2),
-    #     ("Furnished Apartment", "https://www.q84sale.com/en/property/for-rent/furnished-apartment/{}", 1),
-    #     ("Apartment For Rent", "https://www.q84sale.com/en/property/for-rent/apartment-for-rent/{}", 7),
-    #     ("Duplex", "https://www.q84sale.com/en/property/for-rent/duplex/{}", 1),
-    #     ("House Sharing", "https://www.q84sale.com/en/property/for-rent/house-sharing/{}", 1),
-    #     ("Shop For Rent", "https://www.q84sale.com/en/property/for-rent/shop-for-rent/{}", 1),
-    #     ("Office", "https://www.q84sale.com/en/property/for-rent/office/{}", 1),
-    #     ("Stores", "https://www.q84sale.com/en/property/for-rent/stores/{}", 1),
-    #     ("Farms For Rent", "https://www.q84sale.com/en/property/for-rent/farms-for-rent/{}", 2),
-    #     ("Lounge For Rent", "https://www.q84sale.com/en/property/for-rent/lounge-for-rent/{}", 2),
-    #     ("Industrial Certificate", "https://www.q84sale.com/en/property/for-rent/industrial-certificate/{}", 1),
-    #     ("Chalet For Rent", "https://www.q84sale.com/en/property/for-rent/chalet-for-rent/{}", 2),
-    #     ("Rental Playgrounds", "https://www.q84sale.com/en/property/for-rent/rental-playgrounds/{}", 1),
-    #     ("Wanted Property for Rent", "https://www.q84sale.com/en/property/for-rent/wanted-property-for-rent/{}", 1),
-    # ]
+    categories_2 = [
+        ("House for Rent", "https://www.q84sale.com/en/property/for-rent/house-for-rent/{}", 2),
+        ("Floor", "https://www.q84sale.com/en/property/for-rent/floor/{}", 2),
+        ("Furnished Apartment", "https://www.q84sale.com/en/property/for-rent/furnished-apartment/{}", 1),
+        ("Apartment For Rent", "https://www.q84sale.com/en/property/for-rent/apartment-for-rent/{}", 7),
+        ("Duplex", "https://www.q84sale.com/en/property/for-rent/duplex/{}", 1),
+        ("House Sharing", "https://www.q84sale.com/en/property/for-rent/house-sharing/{}", 1),
+        ("Shop For Rent", "https://www.q84sale.com/en/property/for-rent/shop-for-rent/{}", 1),
+        ("Office", "https://www.q84sale.com/en/property/for-rent/office/{}", 1),
+        ("Stores", "https://www.q84sale.com/en/property/for-rent/stores/{}", 1),
+        ("Farms For Rent", "https://www.q84sale.com/en/property/for-rent/farms-for-rent/{}", 2),
+        ("Lounge For Rent", "https://www.q84sale.com/en/property/for-rent/lounge-for-rent/{}", 2),
+        ("Industrial Certificate", "https://www.q84sale.com/en/property/for-rent/industrial-certificate/{}", 1),
+        ("Chalet For Rent", "https://www.q84sale.com/en/property/for-rent/chalet-for-rent/{}", 2),
+        ("Rental Playgrounds", "https://www.q84sale.com/en/property/for-rent/rental-playgrounds/{}", 1),
+        ("Wanted Property for Rent", "https://www.q84sale.com/en/property/for-rent/wanted-property-for-rent/{}", 1),
+    ]
 
     categories_3 = [
         ("Property For Exchange", "https://www.q84sale.com/en/property/for-exchange/{}", 2),
@@ -119,22 +119,22 @@ if __name__ == "__main__":
 
     # Create an instance of the scraper
     PropertyForSale_scraper = MainScraper(categories_1)
-    # PropertyForRent_scraper = MainScraper(categories_2)
+    PropertyForRent_scraper = MainScraper(categories_2)
     PropertyForExchange_scraper = MainScraper(categories_3)
 
 
     # Run the scraper
     asyncio.run(PropertyForSale_scraper.run())
-    # asyncio.run(PropertyForRent_scraper.run())
+    asyncio.run(PropertyForRent_scraper.run())
     asyncio.run(PropertyForExchange_scraper.run())
 
     # Save all results to an Excel file
     excel_file_name_1 = "Property for Sale.xlsx"
-    # excel_file_name_2 = "Property for Rent.xlsx"
+    excel_file_name_2 = "Property for Rent.xlsx"
     excel_file_name_3 = "Property For Exchange.xlsx"
 
     PropertyForSale_scraper.save_to_excel(excel_file_name_1)
-    # PropertyForRent_scraper.save_to_excel(excel_file_name_2)
+    PropertyForRent_scraper.save_to_excel(excel_file_name_2)
     PropertyForExchange_scraper.save_to_excel(excel_file_name_3)
 
     # Google Drive credentials file
