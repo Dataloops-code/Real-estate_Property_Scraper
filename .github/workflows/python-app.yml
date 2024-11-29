@@ -22,11 +22,16 @@ jobs:
       with:
         python-version: "3.10"
 
+    # Install system dependencies for Playwright
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2
+
     # Install dependencies from requirements.txt
     - name: Install dependencies
       run: |
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    
     # Explicitly install fpdf as a troubleshooting step
     - name: Install fpdf explicitly
       run: pip install fpdf
@@ -35,6 +40,7 @@ jobs:
     - name: Install Playwright browsers
       run: |
         python -m playwright install
+        python -m playwright install chromium
 
     # Run the main Python script
     - name: Run Main
