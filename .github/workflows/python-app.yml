@@ -1,56 +1,33 @@
-name: Daily Run
+name: Daily Real Estate Scraper
 
 on:
   schedule:
-    # Runs daily at 1:30 AM Egypt time (11:30 PM UTC)
-    - cron: '50 23 * * *'
-
-permissions:
-  contents: read
+    - cron: '50 2 * * *'
 
 jobs:
-  build:
+  run-scraper:
     runs-on: ubuntu-latest
 
     steps:
-    # Check out the repository
-    - uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v3
 
-    # Set up Python 3.10
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
-        python-version: "3.10"
+        python-version: '3.x'
 
-    # Install system dependencies for Playwright
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2
-
-    # Set up Google credentials
-    - name: Set up Google credentials
-      run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > ./credentials/real-estate-property-scraper-4d9f71a7ded4.json
-
-    # Install Playwright browsers
-    - name: Install Playwright browsers
-      run: |
-        npm install -g playwright
-        python -m playwright install
-
-    # Install dependencies from requirements.txt
-    - name: Install dependencies
+    - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Run the main Python script
-    - name: Run Main
+    - name: Set up Google Cloud Credentials
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+      run: |
+        echo "${{ secrets.GCP_CREDENTIALS }}" > credentials/real-estate-property-scraper-4d9f71a7ded4.json
+
+    - name: Run Scraper
       run: |
         python main.py
-
-    # Save results to Google Drive
-    - name: Save Results to Google Drive
-      run: |
-        python save_to_drive.py
- 
