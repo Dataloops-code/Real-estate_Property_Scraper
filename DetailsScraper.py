@@ -58,6 +58,7 @@ class DetailsScraping:
                             'address': additional_details.get('address'),
                             'beds': additional_details.get('beds'),
                             'area': additional_details.get('area'),
+                            'specifications': additional_details.get('specifications'),
                             'views_no': additional_details.get('views_no'),  # Added views number here
                             'submitter': additional_details.get('submitter'),
                             'ads': additional_details.get('ads'),
@@ -244,6 +245,30 @@ class DetailsScraping:
         area = await page.query_selector(area_selector)
         return await area.inner_text() if area else "0 m2"
 
+    async def scrape_extra_specs(self, page):
+    # Selector to match the structure containing all attributes
+    selector = '.styles_attrs__PX5Fs .styles_attr__BN3w_'
+    elements = await page.query_selector_all(selector)
+
+    attributes = {}
+    for element in elements:
+        # Extract the alt attribute value from the <img> tag
+        img_element = await element.query_selector('img')
+        if img_element:
+            alt_text = await img_element.get_attribute('alt')
+
+            # Extract the text from the corresponding <div>
+            text_element = await element.query_selector('.text-4-med.m-text-5-med.text-neutral_900')
+            if text_element:
+                value = await text_element.inner_text()
+
+                # Add the extracted information to the dictionary
+                if alt_text and value:
+                    # Clean up the value if needed
+                    attributes[alt_text] = value.strip()
+
+    return attributes
+
     # New method to scrape the phone number
     async def scrape_phone_number(self, page):
         """
@@ -332,6 +357,7 @@ class DetailsScraping:
                 address = await self.scrape_address(page)
                 beds = await self.scrape_beds(page)
                 area = await self.scrape_area(page)
+                specifications = await self.scrape_extra_specs(page)
                 views_no = await self.scrape_views_no(page)
                 submitter_details = await self.scrape_submitter_details(page)
                 phone = await self.scrape_phone_number(page)
@@ -346,6 +372,7 @@ class DetailsScraping:
                     'address': address,
                     'beds': beds,
                     'area': area,
+                    'specifications': specifications,
                     'views_no': views_no,
                     'submitter': submitter_details.get('submitter'),
                     'ads': submitter_details.get('ads'),
