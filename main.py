@@ -138,7 +138,7 @@ if __name__ == "__main__":
     PropertyForExchange_scraper.save_to_excel(excel_file_name_3)
 
     # Google Drive credentials file
-    credentials_file = "credentials/real-estate-property-scraper-fd2bfa047924.json"
+    credentials_file = "credentials/real-estate-property-scraper-b7b91306c0e0.json"
 
     # Initialize the SavingOnDrive class
     drive_saver = SavingOnDrive(credentials_file)
