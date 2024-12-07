@@ -1,3 +1,4 @@
+
 import asyncio
 from playwright.async_api import async_playwright
 import nest_asyncio
@@ -246,28 +247,27 @@ class DetailsScraping:
         return await area.inner_text() if area else "0 m2"
 
     async def scrape_extra_specs(self, page):
-    # Selector to match the structure containing all attributes
-    selector = '.styles_attrs__PX5Fs .styles_attr__BN3w_'
-    elements = await page.query_selector_all(selector)
+        selector = '.styles_attrs__PX5Fs .styles_attr__BN3w_'
+        elements = await page.query_selector_all(selector)
 
-    attributes = {}
-    for element in elements:
-        # Extract the alt attribute value from the <img> tag
-        img_element = await element.query_selector('img')
-        if img_element:
-            alt_text = await img_element.get_attribute('alt')
+        attributes = {}
+        for element in elements:
+            # Extract the alt attribute value from the <img> tag
+            img_element = await element.query_selector('img')
+            if img_element:
+                alt_text = await img_element.get_attribute('alt')
 
-            # Extract the text from the corresponding <div>
-            text_element = await element.query_selector('.text-4-med.m-text-5-med.text-neutral_900')
-            if text_element:
-                value = await text_element.inner_text()
+                # Extract the text from the corresponding <div>
+                text_element = await element.query_selector('.text-4-med.m-text-5-med.text-neutral_900')
+                if text_element:
+                    value = await text_element.inner_text()
 
-                # Add the extracted information to the dictionary
-                if alt_text and value:
-                    # Clean up the value if needed
-                    attributes[alt_text] = value.strip()
+                    # Add the extracted information to the dictionary
+                    if alt_text and value:
+                        # Clean up the value if needed
+                        attributes[alt_text] = value.strip()
 
-    return attributes
+        return attributes
 
     # New method to scrape the phone number
     async def scrape_phone_number(self, page):
@@ -401,4 +401,3 @@ class DetailsScraping:
 #     # Print the extracted details
 #     for property in properties:
 #         print(property)
-
