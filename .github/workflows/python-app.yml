@@ -30,10 +30,10 @@ jobs:
           python -m playwright install
 
       - name: Set up Google Cloud credentials
-        run: echo "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" > /credentials/real-estate-property-scraper-e7a60fbb30c7.json
+        run: echo "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" > credentials/real-estate-property-scraper-e7a60fbb30c7.json
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
-        run: echo "GOOGLE_APPLICATION_CREDENTIALS=/credentials/real-estate-property-scraper-e7a60fbb30c7.json" >> $GITHUB_ENV
+        run: echo "GOOGLE_APPLICATION_CREDENTIALS=credentials/real-estate-property-scraper-e7a60fbb30c7.json" >> $GITHUB_ENV
 
       - name: Run the Scraper
         run: |
