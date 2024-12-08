@@ -6,7 +6,7 @@ import json
 import pandas as pd
 from datetime import datetime, timedelta
 from SavingOnDrive import SavingOnDrive
-
+import os
 
 class MainScraper:
     def __init__(self, categories):
@@ -81,11 +81,11 @@ if __name__ == "__main__":
     # Define the scraping categories
     categories_1 = [
         # ("House for Sale", "https://www.q84sale.com/en/property/for-sale/house-for-sale/{}", 5),
-        ("Building or floors", "https://www.q84sale.com/en/property/for-sale/building-or-floors/{}", 1),
+        # ("Building or floors", "https://www.q84sale.com/en/property/for-sale/building-or-floors/{}", 1),
         # ("Apartment for Sale", "https://www.q84sale.com/en/property/for-sale/apartment-for-sale/{}", 2),
         # ("Demolishing", "https://www.q84sale.com/en/property/for-sale/demolishing/{}", 1),
         # ("Lounge for Sale", "https://www.q84sale.com/en/property/for-sale/lounge-for-sale/{}", 1),
-        # ("Chalet for Sale", "https://www.q84sale.com/en/property/for-sale/chalet-for-sale/{}", 1),
+        ("Chalet for Sale", "https://www.q84sale.com/en/property/for-sale/chalet-for-sale/{}", 1),
         # ("Farms for Sale", "https://www.q84sale.com/en/property/for-sale/farms-for-sale/{}", 1),
         # ("Land", "https://www.q84sale.com/en/property/for-sale/land/{}", 1),
         # ("Residential Certificate", "https://www.q84sale.com/en/property/for-sale/residential-certificate/{}", 1),
@@ -136,17 +136,24 @@ if __name__ == "__main__":
     PropertyForSale_scraper.save_to_excel(excel_file_name_1)
     PropertyForRent_scraper.save_to_excel(excel_file_name_2)
     PropertyForExchange_scraper.save_to_excel(excel_file_name_3)
- 
+
+
+    # Load the service account JSON key from the GitHub secret
+    credentials_json = os.environ.get('GCLOUD_KEY_JSON')
+    if not credentials_json:
+        raise EnvironmentError("GCLOUD_KEY_JSON environment variable not found.")
+
+    credentials_dict = json.loads(credentials_json)
+
     # Google Drive credentials file
-    credentials_file = "credentials/real-estate-property-scraper-e7a60fbb30c7.json"
+    # credentials_file = "credentials/real-estate-property-scraper-b7b91306c0e0.json"
 
     # Initialize the SavingOnDrive class
-    drive_saver = SavingOnDrive(credentials_file)
+    drive_saver = SavingOnDrive(credentials_dict)
     drive_saver.authenticate()
 
     # List of files to save
-    excel_files = [excel_file_name_1, excel_file_name_3] # , excel_file_name_2
+    excel_files = [excel_file_name_1, excel_file_name_2, excel_file_name_3] # 
 
     # Save files to Google Drive
     drive_saver.save_files(excel_files)
-
