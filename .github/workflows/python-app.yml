@@ -29,16 +29,20 @@ jobs:
           pip install playwright
           python -m playwright install
 
-      - name: Set GCLOUD_KEY_JSON
+      # - name: Set GCLOUD_KEY_JSON
+      #   env:
+      #     GCLOUD_KEY_JSON: ${{ secrets.GCLOUD_KEY_JSON }}
+      #   run: |
+      #     echo "Google Cloud credentials are set."
+
+      # - name: Run the Scraper
+      #   run: |
+      #     python main.py
+      - name: Run the scraper
         env:
           GCLOUD_KEY_JSON: ${{ secrets.GCLOUD_KEY_JSON }}
         run: |
-          echo "Google Cloud credentials are set."
-
-      - name: Run the Scraper
-        run: |
           python main.py
-
       - name: Cleanup
         run: |
           # Any cleanup steps (optional)
